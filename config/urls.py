@@ -21,4 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls') ),
     path('apiset/', include('apiset.urls') ),
+    path('token/', include('tokenapi.urls') ),
+    path('frontbackdev/', include('frontbackdev.urls')),
+    path('filter/', include('filterREST.urls')),
+    #path('', include('web.urls')),
 ]
